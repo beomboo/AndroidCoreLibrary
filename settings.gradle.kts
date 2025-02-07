@@ -12,13 +12,14 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") } // ✅ JitPack 추가
     }
 }
 
 rootProject.name = "core"
 include(":app")
- 
+include(":core")
+include(":core")
