@@ -8,6 +8,10 @@ group = "com.github.bkc"
 version = "1.0.26"
 
 android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
+    }
     namespace = "kr.co.bkc.core"
     compileSdk = 34
 
