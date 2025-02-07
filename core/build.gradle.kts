@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.bkc"
-version = "1.0.25"
+version = "1.0.26"
 
 android {
     namespace = "kr.co.bkc.core"
@@ -37,7 +37,7 @@ afterEvaluate {
                 from(components["release"]) // ✅ release 컴포넌트 사용
                 groupId = "com.github.bkc"  // ✅ 원하는 그룹 ID (JitPack에 맞게 설정)
                 artifactId = "core"    // ✅ 원하는 아티팩트 ID (라이브러리 이름)
-                version = "1.0.25"
+                version = "1.0.26"
             }
         }
     }
