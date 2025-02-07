@@ -5,6 +5,7 @@ plugins {
 }
 
 group = "com.github.bkc"
+version = "1.0.24"
 
 android {
     namespace = "kr.co.bkc.core"
@@ -12,19 +13,11 @@ android {
 
     defaultConfig {
         minSdk = 24
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-            consumerProguardFiles("consumer-rules.pro")
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
         }
     }
 
@@ -33,14 +26,6 @@ android {
             withSourcesJar()
             withJavadocJar()
         }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
 }
 
