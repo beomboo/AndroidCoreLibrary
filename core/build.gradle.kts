@@ -5,12 +5,12 @@ plugins {
 }
 
 group = "com.github.bkc"
-version = "1.0.27"
+version = "1.0.29"
 
 android {
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     namespace = "kr.co.bkc.core"
     compileSdk = 34
@@ -41,7 +41,7 @@ afterEvaluate {
                 from(components["release"]) // ✅ release 컴포넌트 사용
                 groupId = "com.github.bkc"  // ✅ 원하는 그룹 ID (JitPack에 맞게 설정)
                 artifactId = "core"    // ✅ 원하는 아티팩트 ID (라이브러리 이름)
-                version = "1.0.27"
+                version = "1.0.29"
             }
         }
     }
