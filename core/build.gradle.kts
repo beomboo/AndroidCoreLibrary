@@ -51,8 +51,8 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"]) // ✅ release 컴포넌트 사용
                 groupId = "com.github.bkc"  // ✅ 원하는 그룹 ID (JitPack에 맞게 설정)
-                artifactId = "android_core"    // ✅ 원하는 아티팩트 ID (라이브러리 이름)
-                version = "1.0.1"
+                artifactId = "core"    // ✅ 원하는 아티팩트 ID (라이브러리 이름)
+                version = "1.0.21"
             }
         }
     }

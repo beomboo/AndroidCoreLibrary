@@ -1,4 +1,4 @@
-package kr.co.beomboo.core
+package kr.co.bkc.core
 
 class Utils {
     fun printTestCode(){
